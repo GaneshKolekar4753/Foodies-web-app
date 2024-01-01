@@ -1,7 +1,7 @@
 const express=require("express");
 const port=5000;
 const app=express();
-const path=require(path);
+const path=require('path');
 const db=require("./config/mongoose");
 
 //middleware to handle CORS policy

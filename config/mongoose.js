@@ -1,5 +1,5 @@
 const mongoose=require("mongoose");
-const mongoURI="mongodb+srv://kolekarganesh5151:rsh7lJQhavpGdqFN@cluster0.kizv8ln.mongodb.net/";
+const mongoURI=process.env.MONGODB_URI;
 mongoose.connect(`${mongoURI}gofood`);
 
 const database = mongoose.connection;

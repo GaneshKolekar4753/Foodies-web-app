@@ -2,7 +2,7 @@ const { validationResult } = require("express-validator");
 const User = require("../models/users");
 const bcrypt=require('bcrypt');
 const jwt=require('jsonwebtoken');
-const jwtsecrateKey="IamGaneshKolekar"
+const jwtsecrateKey=process.env.JWT_KEY;
 const Orders=require('../models/orderData');
 
 //create new user in db
